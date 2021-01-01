@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://kit.fontawesome.com/7bb691e4a4.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<title>Payments</title>
+	<style> 
+		* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    background: #9ab3f5;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 80px;
+}
+
+.wrapper {
+    background-color: #f4f2f7;
+    margin: 30px auto;
+
+    max-width: 400px;
+    padding: 15px 20px;
+    border-radius: 10px
+}
+h4 {
+    font-weight: 800;
+    color: blue;
+    padding-top: 10px;
+    text-align: center;
+}
+label {
+    font-weight: 700;
+    color: blue;
+    font-size: 12px;
+    opacity: 0.8;
+}
+.card-no {
+    border: none;
+    outline: none;
+    width: 90%;
+    padding-left: 8px
+}
+.form-control {
+    outline: none;
+    border: none;
+    box-shadow: none
+}
+.card-number {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+#form-footer a {
+    font-size: 12px;
+    font-weight: 900;
+    margin-left: 30%;
+    color: blue;
+}
+#form-footer a {
+    text-decoration: none;
+}
+.form-inline label {
+    font-size: 15px;
+}
+.focused {
+    border: 2px solid #9ab3f5
+}
+#form-footer a {
+    margin: 0
+}
+#form-footer p {
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #777
+}
+@media(max-width:395px) {
+    .form-inline label {
+        font-size: 12px
+    }
+#form-footer p {
+        font-size: 11px
+    }
+.card-no {
+        width: 85%
+    }      
+	</style>
+</head>
+<body>
+     <nav class="navbar  navbar-expand-md navbar-dark fixed-top"style="background-color:#FFEFD5;padding: 0px;width: 100%;">
+  <img src="smart logo.png"  style="width: 50px;">
+ <a class="navbar-brand"  style=" color:black; position: relative;padding: 0px;font-family:  Ubuntu;font-size: 20px;"  href="#"><b>Smart Domestics</b></a>
+<button  class="navbar-toggler"type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse"  id="collapsibleNavbar">
+    <ul class="navbar-nav" style="padding-left: 20px;">
+      <li class="nav-item">
+      <a class="nav-link" style="color: black;font-family:  Ubuntu;font-size: 17px;"  href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="color: black;font-family: Ubuntu;font-size: 17px;" href="about us.html">About</a>
+      </li>
+      <li class="nav-item dropdown" style="">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: black;font-family: Ubuntu;font-size: 17px;">Services </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="barbers.html">Barbers</a>
+          <a class="dropdown-item" href="carpenters.html">Carpenters</a>
+          <a class="dropdown-item" href="cleaners.html">Cleaners</a>
+          <a class="dropdown-item" href="caterers.html">Caterers</a>
+          <a class="dropdown-item" href="delivery service.html">Delivery services</a>
+          <a class="dropdown-item" href="dj.html">DJ</a>
+          <a class="dropdown-item" href="drycleaners.html">Laundry & cloth wash</a>
+          <a class="dropdown-item" href="electricians.html">Electricians</a>
+          <a class="dropdown-item" href="gardeners.html">Gardeners</a>
+          <a class="dropdown-item" href="hair dressers.html">Hair dressers</a>
+          <a class="dropdown-item" href="makeup artists.html">Makeup artists</a>
+          <a class="dropdown-item" href="mechanics.html">Mechanics</a>
+          <a class="dropdown-item" href="painters.html">Painters</a>
+          <a class="dropdown-item" href="plumbers.html">Plumbers</a>
+        </div>
+      </li>   
+      <li class="nav-item">
+        <a class="nav-link" style="color: black;font-family: Ubuntu;font-size: 17px;" href="contact.html">Contacts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="color: black;font-family: Ubuntu;font-size: 17px;" href="payments.html">Payments</a>
+      </li>   
+    </ul>
+     <div class="navbar-nav ml-auto">
+ <a href="Login.html" class="nav-item nav-link" style="color: black;font-family: Ubuntu;font-size: 17px;"><i class="fa fa-fw fa-user" style="color: black;"></i>Login</a>
+</div>
+ <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="margin-right: 20px;">
+      <button style="border: none; color: white;background-color: blue;margin-right: 20px;">Search</button>
+    </form>
+</div>         
+</nav>
+
+
+     <div class="wrapper">
+    <h4 class="text-uppercase">Payment Details</h4>
+    <form action="Result.html" method="GET" class="form mt-4">
+    <div class="form-group"> <label for="name" class="text-uppercase">name on the card</label> <input type="text" class="form-control" placeholder="Andrew Allison"> </div>
+        <div class="form-group"> <label for="card" class="text-uppercase">card number</label>
+            <div class="card-number"> <input type="text" class="card-no" step="4" placeholder="1234 4567 5869 1234" pattern="^[0-9].{15,}"> <span class=""> <img src="https://www.freepnglogos.com/uploads/mastercard-png/mastercard-marcus-samuelsson-group-2.png" alt="" width="30" height="30"> </span> </div>
+        </div>
+        <div class="d-flex w-100">
+            <div class="d-flex w-50 pr-sm-4">
+                <div class="form-group"> <label for="expiry" class="text-uppercase">exp.date</label> <input type="text" class="form-control" placeholder="03/2020"> </div>
+            </div>
+            <div class="d-flex w-50 pl-sm-5 pl-3">
+                <div class="form-group"> <label for="cvv">CVV</label> <a href="#" title="CVV is a credit or debit card number, the last three digit number printed on the signature panel">what's this</a> <input type="password" class="form-control pr-5" maxlength="3" placeholder="123"> </div>
+            </div>
+        </div>
+        <div class="form-inline pt-sm-3 pt-2"> <input type="checkbox" name="address" id="address"> <label for="address" class="px-sm-1 pl-1 pt-sm-0 pt-2">My billing address is the same as the shipping</label> </div>
+        <div class="form-inline py-sm-2"> <input type="checkbox" name="details" id="details"> <label for="details" class="px-sm-2 pl-2 pt-sm-0 pt-2">Save my details for future purchases</label> </div>
+        <div class="my-3"> <input type="submit" value="place your order" class="text-uppercase btn btn-primary btn-block p-3"> </div>
+        <div id="form-footer">
+            <p>By placing your order, you agree to our</p>
+            <p><a href="#">privacy notice</a> & <a href="#">terms of use</a>.</p>
+        </div>
+    </form>
+</div>
+
+
+<!--footer-->
+        <footer>
+      <!-- Footer -->
+<footer class="page-footer font-small indigo" style="padding-top: 50px;background-color: black;opacity: 0.9;position: relative;">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+  
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+     <img src="smart logo.png"  style="width: 70px;">
+
+        <ul class="list-unstyled">
+          <li>
+        <p style="color: lightgray;opacity: 0.7;"> <i class="fas fa-map-marker-alt fa-1x fa-fw" style="color: lightgray;opacity: 0.7;cursor: pointer;"></i>2,Ondo Street off irawo bus stop,ikeja,Lagos State.</p>
+          </li>
+          <li>
+            <p style="color: lightgray;opacity: 0.7;"><i class="fas fa-map-marker-alt fa-1x fa-fw" style="color: lightgray;padding-top: 10px;opacity: 0.7;" style="cursor: pointer;color: lightgray;opacity: 0.7;"></i>Kosofe local government area,Lagos State.</p>
+          </li>
+          <li>
+             <p style="color: lightgray;opacity: 0.7;"><i class="fas fa-phone-alt fa-1x fa-fw" style="color: lightgray;padding-top: 10px;opacity: 0.7;" style="cursor: pointer;color: lightgray;opacity: 0.7;"></i>+2348137310502</p>
+          </li>
+          <li>
+            <p style="color: lightgray;opacity: 0.7;"><i class="far fa-envelope fa-1x fa-fw" style="color: lightgray;padding-top: 10px;opacity: 0.7;" style="cursor: pointer;color: lightgray;opacity: 0.7;"></i>otemsmartdomestic@gmail.com</p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <p class="text-uppercase mt-3 mb-4" style="font-size: 23px;color:blue;cursor: pointer;opacity: 0.7;font-family: sans-serif;">COMPANY</p>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="about us.html" style="color: lightgray;cursor: pointer;opacity: 0.7;">About us</a>
+          </li>
+          <li>
+            <a href="contact.html" style="color: lightgray;cursor: pointer;opacity: 0.7;">Contact us</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <p class="text-uppercase mt-3 mb-4" style="font-size: 23px;color:blue;cursor: pointer;opacity: 0.7;font-family: sans-serif;">QuickLinks</p>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" style="color: lightgray;cursor: pointer;opacity: 0.7;">Site Map</a>
+          </li>
+          <li>
+            <a href="Login.html" style="color: lightgray;cursor: pointer;opacity: 0.7;">Login</a>
+          </li>
+          <li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <p class="text-uppercase mt-3 mb-4" style="font-size: 23px;color:blue;cursor: pointer;opacity: 0.7;font-family: sans-serif;">let's stay in touch</p>
+           <form action="Result.html" method="GET">
+           <input type="email" placeholder="Enter your Email Address here" name="name"> 
+         </form>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-1" style="background-color: gray;">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/" style="color: black;"><b>Smart Domestics</b></a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+    </footer>
+</body>
+</html>
